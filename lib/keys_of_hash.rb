@@ -1,7 +1,10 @@
 require 'pry'
 class Hash
   def keys_of(*items)
-    self
+    self.each do |key, elements|
+      puts key
+      puts elements
+    end
 =begin   array = []
     binding.pry
     .each do |key,value|
