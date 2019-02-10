@@ -2,6 +2,8 @@ require 'pry'
 class Hash
   def keys_of(*items)
     self.each do |key, elements|
+      if items.include?(value)
+        array.push(key)
       puts key
       puts elements
     end
