@@ -1,11 +1,11 @@
 require 'pry'
 class Hash
   def keys_of(*items)
+    array =[]
     self.each do |key, elements|
       if items.include?(value)
         array.push(key)
-      puts key
-      puts elements
+      end
     end
 =begin   array = []
     binding.pry
